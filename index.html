@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSI and SVI in DC</title>
+
+  <!-- ArcGIS Embeddable Map Component -->
+  <script type="module" src="https://js.arcgis.com/embeddable-components/4.33/arcgis-embeddable-components.esm.js"></script>
+
+  <!-- Basic styling -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f5f5f5;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 1.5em;
+      text-align: center;
+      color: #333;
+    }
+    arcgis-embedded-map {
+      height: 80vh; /* takes 80% of viewport height */
+      width: 90vw;  /* takes 90% of viewport width */
+      max-width: 1000px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <h1>GSI and SVI in DC</h1>
+
+  <!-- ArcGIS Embedded Map -->
+  <arcgis-embedded-map
+    item-id="66698b4dc3f245599acb7e273f05f435"
+    theme="light"
+    legend-enabled
+    center="-77.00050962691427,38.92102670939976"
+    scale="144447.638572"
+    portal-url="https://utoronto.maps.arcgis.com">
+  </arcgis-embedded-map>
+</body>
+</html>
